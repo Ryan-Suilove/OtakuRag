@@ -16,7 +16,7 @@
 
 ------------------------------------------------------------------------
 
-## #1 底层原理（KV Cache / RoPE / Attention）
+## #1 底层原理（KV Cache / RoPE / Attention/GPU的底层原理）
 
 ### 📘 学什么？
 
@@ -31,7 +31,7 @@
 
 -   **直接读源码（强烈推荐 PyTorch + vLLM + Qwen）**
 -   Hugging Face `transformers` 里 `modeling_xxx.py`
--   FlashAttention 论文 + 源码
+-   FlashAttention 论文 + 源码 + 稀疏注意力（你已经懂了）
 
 ### 🔍 带着哪些角度读？
 
@@ -81,7 +81,7 @@
 
 -   INT4、Q4_K\_M、AWQ、GPTQ 区别\
 -   KV Cache 量化为何困难\
--   CUDA kernel 合并、TensorRT、PagedAttention\
+-   CUDA kernel 合并、TensorRT、PagedAttention。FlashAttention\
 -   流式输出、批处理、KV Cache sharing\
 -   单机部署 vLLM 以及模型并发能力
 
@@ -106,7 +106,7 @@
 
 ------------------------------------------------------------------------
 
-## #4 微调（LoRA、SFT、训练稳定性）
+## #4 微调（LoRA、SFT、训练稳定性）（和3属于一类）新增一个HPC
 
 ### 📘 学什么？
 
